@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: autoglobe-dealership
+    runtime: static
+    buildCommand: echo "No build required"
+    staticPublishPath: .
+    envVars:
+      - key: EXCHANGE_RATE
+        value: 150
