@@ -4,7 +4,7 @@ A fully responsive, modern car dealership website featuring a global inventory o
 **All prices are displayed in Kenyan Shillings (KES)** using a fixed exchange rate (1 USD = 150 KES).
 
 ## 🚀 Live Demo
-Visit the live site: [https://your-username.github.io/autoglobe-dealership/](https://your-username.github.io/autoglobe-dealership/)
+Deployed on Render: [https://autoglobe-dealership.onrender.com](https://autoglobe-dealership.onrender.com)
 
 ## ✨ Features
 - **Global Car Inventory** – 55+ cars from all over the world.
@@ -22,15 +22,20 @@ Visit the live site: [https://your-username.github.io/autoglobe-dealership/](htt
 - Google Fonts (Inter)
 - Unsplash for placeholder images
 
-## 📦 How to Deploy on GitHub Pages
-1. Fork or clone this repository.
-2. Go to **Settings → Pages**.
-3. Select the `main` branch and `/ (root)` folder.
-4. Click **Save** – your site will be live in a few minutes.
+## 📦 Deploy on Render (Static Site)
+1. Push this repository to GitHub.
+2. Log in to [Render.com](https://render.com) and click **"New +"** → **"Static Site"**.
+3. Connect your GitHub repository.
+4. Render will automatically detect the `render.yaml` file – use the settings from it.
+5. Alternatively, manually set:
+   - **Build Command:** `echo "No build required"`
+   - **Publish Directory:** `.` (root)
+6. Click **"Create Static Site"**.  
+   Your site will be live at `https://<your-service>.onrender.com` within minutes.
 
-## 🧪 Customization
-- To change the exchange rate, edit `EXCHANGE_RATE` in `script.js`.
-- Add or remove cars by modifying the `carDatabase` array.
+## 🔧 Customization
+- To change the exchange rate, update the `EXCHANGE_RATE` environment variable in Render’s dashboard or edit the value in `render.yaml` / `script.js`.
+- Add or remove cars by modifying the `carDatabase` array in `script.js`.
 - Update contact details and social links in `index.html`.
 
 ## 📄 License
